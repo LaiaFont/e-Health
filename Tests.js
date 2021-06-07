@@ -36,28 +36,31 @@ window.onload = function () {
     let buttons = document.querySelectorAll(".botons span");
     var points = 0;
     let flex = document.querySelector(".column_2");
+    let inside = 0;
 
     function changeQuestion() {
         if (whichQ < testos.test[localStorage.getItem('whichT')].questions.length) {
-            console.log("In");
             whichQ ++;
             localStorage.setItem('whichQ', whichQ);
             update();
     
         } if (whichQ == testos.test[localStorage.getItem('whichT')].questions.length) {
-            let button = document.createElement("span");
-            let text = document.createElement("p");
+            if (inside==0) {
+                inside++;
+
+                let button = document.createElement("span");
+                let text = document.createElement("p");
     
-            text.innerHTML = "Finish the test";
-            text.style.fontSize = "30px";
+                text.innerHTML = "Finish the test";
+                text.style.fontSize = "30px";
     
-            buttons.id = "finish";
-            button.style.backgroundColor = "#49D3EA";
-            button.style.textAlign = "center";
-            button.style.lineHeight = "100px";
-            button.style.height = "40%";
-            button.style.margin = "80px 350px 100px 350px";
-            button.style.borderRadius = "20px";
+                buttons.id = "finish";
+                button.style.backgroundColor = "#49D3EA";
+                button.style.textAlign = "center";
+                button.style.lineHeight = "100px";
+                button.style.height = "40%";
+                button.style.margin = "80px 350px 100px 350px";
+                button.style.borderRadius = "20px";
     
             button.appendChild(text);
             flex.appendChild(button);
@@ -82,6 +85,9 @@ window.onload = function () {
                 mark.innerHTML = localStorage.getItem(localStorage.getItem('whichT') + 'p');
                 mark.className = "mark";
                 mark.style.textAlign = "center";
+                mark.style.float = "right";
+                mark.style.padding ="30px 15px 0 0";
+                mark.style.fontSize = "30px";
     
                 meter.className = "meter";
     
@@ -117,7 +123,9 @@ window.onload = function () {
                 meter.appendChild(prog);
                 flex.appendChild(meter);
     
-            });
+                });
+            } 
+            
         }
     }
 
