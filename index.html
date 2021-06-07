@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pàgina Inicial</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    
+</head>
+
+<body>
+    <div id="container">
+        <nav class="column_1">
+            <ul class="side_menu">
+                <li id="logo">
+                    <img id="logo" src="img/logo.png">
+                </li>
+                <li class="text" id="articles">
+                    <img src="img/articles_icon.png">
+                    <p>Articles</p>
+                </li>
+
+                <li class="text" id="tests">
+                    <img src="img/tests_icon.png">
+                    <p>Tests</p>
+                </li>
+
+                <li class="text" id="rankings">
+                    <img id="rankings" src="img/rankings_icon.png">
+                    <p>Rankings</p>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="column_2">
+            <div class="container_c">
+               <div class="carousel">
+                   <div class = "arrows_right">
+                    <img src="/img/white-arrow.png" alt="fletxa" onclick="plusSlides(1)">
+                    </div>
+                    <div class="cards">
+                        <div class="card img-1">
+                            <img>
+                        </div>
+            
+                        <div class="card img-2">
+                            <img>
+                        </div>
+            
+                        <div class="card img-3">
+                            <img>
+                        </div>
+                        <div id="dots" style="text-align:center">
+                            <span class="dot" onclick= "currentSlide(1)"></span>
+                            <span class="dot" onclick= "currentSlide(2)"></span>
+                            <span class="dot" onclick= "currentSlide(3)"></span>
+                        </div>
+                    </div>
+                    <div class = "arrows_left">
+                    <img src="/img/white-arrow.png" alt="fletxa" onclick="plusSlides(-1)">
+                    </div>
+                </div>
+                <div class="mite">
+                    <p id="Text_mite"></p>
+                </div>
+                <section class="buttons">
+                    <span id="true"><p>True</p></span>
+                    <span id="false"><p>False</p></span>
+                </section>
+            </div>
+            
+        </section>
+        <footer id="Footer">e-Health Coop.</footer>
+    </div>
+    
+    <script type="text/javascript" src="actions.js"></script>
+    <script type="text/javascript" src="dades.js"></script>
+</body>
+</html>
