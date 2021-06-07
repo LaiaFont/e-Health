@@ -243,16 +243,16 @@ body {
 }
 
 .c1 {
-  background-image: url("/img/sexual.jpg");
+  background-image: url("img/sexual.jpg");
 }
 .c2 {
-  background-image: url("/img/psicologia.jpg");
+  background-image: url("img/psicologia.jpg");
 }
 .c3 {
-  background-image: url("/img/fisic.jpg");
+  background-image: url("img/fisic.jpg");
 }
 .c4 {
-  background-image: url("/img/covid.jpg");
+  background-image: url("img/covid.jpg");
 }
 
 .child {
